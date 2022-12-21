@@ -1,0 +1,67 @@
+[
+  {
+    "id": 15,
+    "menu_id": 2,
+    "title": "Beranda",
+    "url": "\/",
+    "target": "_self",
+    "icon_class": null,
+    "color": "#000000",
+    "parent_id": null,
+    "order": 1,
+    "created_at": "2022-10-26T09:04:41.000000Z",
+    "updated_at": "2022-10-26T09:05:28.000000Z",
+    "route": null,
+    "parameters": null,
+    "children": []
+  },
+  {
+    "id": 16,
+    "menu_id": 2,
+    "title": "Profil",
+    "url": "",
+    "target": "_self",
+    "icon_class": null,
+    "color": "#000000",
+    "parent_id": null,
+    "order": 2,
+    "created_at": "2022-10-26T09:05:00.000000Z",
+    "updated_at": "2022-10-26T09:05:28.000000Z",
+    "route": null,
+    "parameters": null,
+    "children": [
+      {
+        "id": 18,
+        "menu_id": 2,
+        "title": "Profil Kelurahan",
+        "url": "\/profil",
+        "target": "_self",
+        "icon_class": null,
+        "color": "#000000",
+        "parent_id": 16,
+        "order": 1,
+        "created_at": "2022-10-26T09:05:51.000000Z",
+        "updated_at": "2022-10-26T09:05:57.000000Z",
+        "route": null,
+        "parameters": null,
+        "children": []
+      },
+      {
+        "id": 17,
+        "menu_id": 2,
+        "title": "Visi dan Misi",
+        "url": "\/visimisi",
+        "target": "_self",
+        "icon_class": null,
+        "color": "#000000",
+        "parent_id": 16,
+        "order": 2,
+        "created_at": "2022-10-26T09:05:24.000000Z",
+        "updated_at": "2022-10-26T09:05:57.000000Z",
+        "route": null,
+        "parameters": null,
+        "children": []
+      }
+    ]
+  }
+]
