@@ -23,7 +23,7 @@
 
     <div class="marketing">
 
-        <div class="row mb-5 mx-auto">
+        <div class="row mb-5 mx-auto justify-content-center">
             @foreach ($features as $feature)
                 <div class="col-md-2">
                     <a class="text-decoration-none text" href="{{ $feature->link }}" target="__blank">

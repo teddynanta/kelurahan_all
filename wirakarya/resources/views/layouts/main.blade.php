@@ -35,7 +35,7 @@
     </main>
     <!-- FOOTER -->
     <div class="container-fluid bg-primary mt-auto text-white">
-        <footer class="py-5 mx-3">
+        <footer>
             @include('footer')
         </footer>
     </div>
