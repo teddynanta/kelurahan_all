@@ -45,9 +45,9 @@ class HomeController extends Controller
         return view('datas.index', [
             'menu' => menu('menu', '_json'),
             'active' => MenuItem::select('title')->where('url', $request->getRequestUri())->first(),
-            'populations' => Population::where('tahun', Carbon::now()->year)->first(),
-            'religions' => Religion::where('tahun', Carbon::now()->year)->first(),
-            'jobs' => Job::where('tahun', Carbon::now()->year)->first(),
+            'populations' => Population::orderBy('tahun', 'desc')->first(),
+            'religions' => Religion::orderBy('tahun', 'desc')->first(),
+            'jobs' => Job::orderBy('tahun', 'desc')->first(),
             'categories' => Category::all(),
         ]);
     }
@@ -135,7 +135,7 @@ class HomeController extends Controller
             'data' => Page::where('slug', ltrim($request->getRequestUri(), '/'))->first(),
             'menu' => menu('menu', '_json'),
             'active' => $active,
-            'charts' => Worship::where('tahun', Carbon::now()->year)->first(),
+            'charts' => Worship::orderBy('tahun', 'desc')->first(),
             'categories' => Category::all(),
         ]);
     }
@@ -152,7 +152,7 @@ class HomeController extends Controller
             'data' => Page::where('slug', ltrim($request->getRequestUri(), '/'))->first(),
             'menu' => menu('menu', '_json'),
             'active' => $active,
-            'charts' => School::where('tahun', Carbon::now()->year)->first(),
+            'charts' => School::orderBy('tahun', 'desc')->first(),
             'categories' => Category::all(),
         ]);
     }
@@ -169,7 +169,7 @@ class HomeController extends Controller
             'data' => Page::where('slug', ltrim($request->getRequestUri(), '/'))->first(),
             'menu' => menu('menu', '_json'),
             'active' => $active,
-            'charts' => Healthcare::where('tahun', Carbon::now()->year)->first(),
+            'charts' => Healthcare::orderBy('tahun', 'desc')->first(),
             'categories' => Category::all(),
         ]);
     }
